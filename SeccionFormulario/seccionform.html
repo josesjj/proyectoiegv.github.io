@@ -32,11 +32,9 @@
         </svg>
       </a>
     </div>
-    <!-- Botón hamburguesa -->
-    <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none focus:ring-2 focus:ring-orange-400 group" aria-label="Abrir menú">
-      <span class="block w-7 h-1 bg-orange-600 mb-1 rounded transition-all duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-2"></span>
-      <span class="block w-7 h-1 bg-orange-600 mb-1 rounded transition-all duration-300 group-[.open]:opacity-0"></span>
-      <span class="block w-7 h-1 bg-orange-600 rounded transition-all duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-2"></span>
+    <!-- Icono regresar solo en mobile -->
+    <button id="regresar-icon-mobile" class="md:hidden flex items-center justify-center w-10 h-10 rounded focus:outline-none focus:ring-2 focus:ring-orange-400 bg-white/80 hover:bg-orange-100 transition" aria-label="Regresar">
+      <svg class="w-7 h-7 text-orange-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
     </button>
     <!-- Menú normal -->
     <ul id="menu-list" class="hidden md:flex space-x-4 md:space-x-8 font-semibold text-orange-900 text-lg">
@@ -276,8 +274,10 @@
 
 
     <!--JavaScript-->
+
   <script src="seccionform.js"></script>
   <script src="/faq.js"></script>
+  <script src="/animacion-inicio.js"></script>
 
 
 

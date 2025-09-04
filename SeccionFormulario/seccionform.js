@@ -6,8 +6,10 @@ window.location.href = '../Formulario Iniciar Sesion/formlogin.html'
 }
 
 
+
 const regresar = document.querySelector('#regresar');
 const regresarMobile = document.querySelector('#regresar-mobile');
+const regresarIconMobile = document.querySelector('#regresar-icon-mobile');
 
 function cerrarSesion() {
 	alert(`🤗 ¡Hasta pronto! Te esperamos con los brazos abiertos en nuestra institución, donde cada día es una nueva oportunidad para crecer y perfeccionar tu arte culinario. 🍽️✨`);
@@ -15,11 +17,15 @@ function cerrarSesion() {
 	window.location.href = '../Formulario Iniciar Sesion/formlogin.html';
 }
 
+
 if (regresar) {
 	regresar.addEventListener('click', cerrarSesion);
 }
 if (regresarMobile) {
 	regresarMobile.addEventListener('click', cerrarSesion);
+}
+if (regresarIconMobile) {
+	regresarIconMobile.addEventListener('click', cerrarSesion);
 }
 
 

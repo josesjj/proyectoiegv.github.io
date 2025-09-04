@@ -16,12 +16,11 @@
         <a href="../index.html" class="flex items-center">
             <img src="../Imagenes/icono.png" alt="Logo" class="h-14 w-14 drop-shadow-lg hover:scale-110 transition-transform duration-300" />
         </a>
-        <!-- Botón hamburguesa -->
-        <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none focus:ring-2 focus:ring-orange-400 group" aria-label="Abrir menú">
-            <span class="block w-7 h-1 bg-orange-600 mb-1 rounded transition-all duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-2"></span>
-            <span class="block w-7 h-1 bg-orange-600 mb-1 rounded transition-all duration-300 group-[.open]:opacity-0"></span>
-            <span class="block w-7 h-1 bg-orange-600 rounded transition-all duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-2"></span>
-        </button>
+        <!-- Botón ir al menú solo en mobile -->
+        <a href="/index.html" class="md:hidden flex items-center gap-2 px-5 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold shadow-md hover:from-orange-500 hover:to-orange-600 hover:scale-105 transition-all duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" /></svg>
+            Ir al menú
+        </a>
         <!-- Menú normal -->
         <ul id="menu-list" class="hidden md:flex space-x-4 md:space-x-8 font-semibold text-orange-900 text-lg">
             <li>
@@ -39,18 +38,7 @@
            
         </ul>
     </div>
-    <!-- Menú móvil -->
-    <ul id="menu-mobile" class="md:hidden fixed top-16 left-0 w-full bg-orange-100 shadow-lg flex-col items-center text-orange-900 text-lg font-semibold space-y-2 py-6 z-40 hidden animate-fadeInUp">
-    <li>
-        <a href="/index.html" class="block w-full text-center px-6 py-3 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold shadow-md hover:from-orange-500 hover:to-orange-600 hover:scale-105 transition-all duration-300">Regresar</a>
-    </li>
-    <li>
-        <a href="/Formulario Iniciar Sesion/formlogin.html" class="block w-full text-center px-6 py-3 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold shadow-md hover:from-orange-500 hover:to-orange-600 hover:scale-105 transition-all duration-300">Iniciar sesión</a>
-    </li>
-    <li>
-        <a href="#footer" class="block w-full text-center px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold shadow-md hover:from-orange-600 hover:to-orange-500 hover:scale-105 transition-all duration-300">Redes sociales</a>
-    </li>
-    </ul>
+
 </nav>
 
 
@@ -122,4 +110,5 @@
 
     
 </body>
+<script src="/animacion-inicio.js"></script>
 </html>
