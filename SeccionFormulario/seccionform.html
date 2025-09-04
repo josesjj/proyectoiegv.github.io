@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../Imagenes/icono.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="../Principal/menu.js"></script>
+  <title>IEGV - Carreras y Cursos</title>
+</head>
+<body>
+
+<!--Nav de la pagina-->
+
+<nav class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-orange-100 via-orange-200 to-orange-300 shadow-lg">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+    <a href="../Principal/index.html" class="flex items-center">
+      <img src="../Imagenes/icono.png" alt="Logo" class="h-14 w-14 drop-shadow-lg hover:scale-110 transition-transform duration-300" />
+    </a>
+    <!-- Botón hamburguesa -->
+    <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none focus:ring-2 focus:ring-orange-400 group" aria-label="Abrir menú">
+      <span class="block w-7 h-1 bg-orange-600 mb-1 rounded transition-all duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-2"></span>
+      <span class="block w-7 h-1 bg-orange-600 mb-1 rounded transition-all duration-300 group-[.open]:opacity-0"></span>
+      <span class="block w-7 h-1 bg-orange-600 rounded transition-all duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-2"></span>
+    </button>
+    <!-- Menú normal -->
+    <ul id="menu-list" class="hidden md:flex space-x-4 md:space-x-8 font-semibold text-orange-900 text-lg">
+      <li><a href="../Principal/index.html" class="px-4 py-2 rounded-full hover:bg-orange-400 hover:text-white transition">Salir</a></li>
+      <li><a href="#redes" class="px-4 py-2 rounded-full hover:bg-orange-400 hover:text-white transition">Redes sociales</a></li>
+    </ul>
+  </div>
+  <!-- Menú móvil -->
+  <ul id="menu-mobile" class="md:hidden fixed top-16 left-0 w-full bg-orange-100 shadow-lg flex-col items-center text-orange-900 text-lg font-semibold space-y-2 py-6 z-40 hidden animate-fadeInUp">
+    <li><a href="../Principal/index.html" class="block px-6 py-3 rounded-full hover:bg-orange-400 hover:text-white transition">Salir</a></li>
+    <li><a href="#redes" class="block px-6 py-3 rounded-full hover:bg-orange-400 hover:text-white transition">Redes sociales</a></li>
+  </ul>
+</nav>
+
+<!--Main Principal-->
+
+
+<header class="relative w-full min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-orange-300 via-orange-100 to-orange-400 pt-20 md:pt-24 overflow-hidden">
+  <img src="../Imagenes/imagenbackground.png" alt="Fondo gastronomía" class="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none select-none" />
+  <div class="relative z-10 bg-white/80 rounded-3xl shadow-2xl p-8 md:p-12 max-w-2xl flex flex-col items-center animate-fadeInUp">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-orange-600 text-center mb-4 drop-shadow-lg tracking-tight">Carreras y Cursos IEGV</h1>
+    <p class="text-lg md:text-xl text-gray-700 text-center mb-2">Descubre nuestras especializaciones y talleres para tu futuro profesional en gastronomía.</p>
+  </div>
+</header>
+
+<!-- Secciones -->
+<main class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-4 py-16">
+  <!-- Chef en cocina internacional -->
+  <div class="bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center border-t-8 border-orange-400 hover:scale-105 transition-transform duration-300 animate-fadeInUp">
+    <img src="../Imagenes/imagen02.jpg" alt="Chef internacional" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-orange-200 shadow-md" />
+    <h2 class="text-2xl font-bold text-orange-600 mb-2 text-center">Chef en Cocina Internacional</h2>
+    <h3 class="text-lg font-semibold text-orange-500 mb-1">Requisitos</h3>
+    <ul class="list-disc list-inside text-orange-700 mb-2">
+      <li>2 fotos tipo Carnet</li>
+      <li>1 Fotocopia de la C.I</li>
+      <li>Pago de inscripción</li>
+      <li>Pago de la mensualidad</li>
+    </ul>
+    <h3 class="text-lg font-semibold text-orange-500 mb-1">Pensum</h3>
+    <ol class="list-decimal list-inside text-orange-700 mb-2">
+      <li>Módulo Teórico</li>
+      <li>Módulo Francés</li>
+      <li>Módulo Italiano</li>
+      <li>Módulo Español</li>
+      <li>Módulo Asiático</li>
+      <li>Módulo Latinoamericano</li>
+      <li>Módulo Venezolano</li>
+      <li>Pasantías</li>
+    </ol>
+    <h4 class="text-md font-bold text-orange-600 mt-2 mb-1">Breve reseña</h4>
+    <p class="text-gray-700 text-sm text-center">La carrera de Chef en Cocina Internacional dura 24 meses, con formación teórica y práctica, pasantías y simulación de restaurante. Avalada por la UNET y el Ministerio de Educación.</p>
+  </div>
+  <!-- Chef en Panadería, Pastelería y Repostería -->
+  <div class="bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center border-t-8 border-orange-500 hover:scale-105 transition-transform duration-300 animate-fadeInUp">
+    <img src="../Imagenes/imagen01.jpg" alt="Panadería y Pastelería" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-orange-200 shadow-md" />
+    <h2 class="text-2xl font-bold text-orange-600 mb-2 text-center">Chef Internacional en Panadería, Pastelería y Repostería</h2>
+    <h3 class="text-lg font-semibold text-orange-500 mb-1">Requisitos</h3>
+    <ul class="list-disc list-inside text-orange-700 mb-2">
+      <li>2 fotos tipo Carnet</li>
+      <li>1 Fotocopia de la C.I</li>
+      <li>Pago de inscripción</li>
+      <li>Pago de la mensualidad</li>
+    </ul>
+    <h3 class="text-lg font-semibold text-orange-500 mb-1">Pensum</h3>
+    <ol class="list-decimal list-inside text-orange-700 mb-2">
+      <li>Módulo Teórico</li>
+      <li>Módulo de Panadería</li>
+      <li>Módulo de Pastelería</li>
+      <li>Módulo de Repostería</li>
+      <li>Pasantías</li>
+    </ol>
+    <h4 class="text-md font-bold text-orange-600 mt-2 mb-1">Breve reseña</h4>
+    <p class="text-gray-700 text-sm text-center">Duración: 21 meses. Formación integral en panificación y repostería, con prácticas reales y simulación de restaurante/pastelería. Certificación oficial.</p>
+  </div>
+</main>
+
+<!-- Cursos -->
+<section class="w-full max-w-4xl mx-auto px-4 py-12">
+  <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 flex flex-col items-center animate-fadeInUp">
+    <h2 class="text-2xl md:text-3xl font-bold text-orange-600 mb-2 text-center">IEGV también te ofrece cursos cortos</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 text-orange-700 font-semibold text-center mb-4">
+      <li>Bartender</li>
+      <li>Barismo</li>
+      <li>Comida Rápida</li>
+      <li>Sushi</li>
+      <li>Tortas Frías</li>
+      <li>Pasapalos</li>
+      <li>Manejo de boquillas</li>
+      <li>Pizzas</li>
+      <li>Mini Chef</li>
+      <li>Comida navideña</li>
+      <li>¡Y muchos más!</li>
+    </ul>
+    <div class="w-full flex flex-col md:flex-row gap-6 mt-6">
+      <!-- Ventajas -->
+      <div class="flex-1 bg-orange-50 rounded-xl p-6 shadow text-center flex flex-col items-center">
+        <svg class="w-10 h-10 text-orange-500 mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span class="font-bold text-orange-700">Horarios flexibles</span>
+        <span class="text-sm text-gray-600">Elige el horario que mejor se adapte a ti.</span>
+      </div>
+      <div class="flex-1 bg-orange-50 rounded-xl p-6 shadow text-center flex flex-col items-center">
+        <svg class="w-10 h-10 text-orange-500 mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        <span class="font-bold text-orange-700">Certificación oficial</span>
+        <span class="text-sm text-gray-600">Avalada por el Ministerio de Educación y la UNET.</span>
+      </div>
+      <div class="flex-1 bg-orange-50 rounded-xl p-6 shadow text-center flex flex-col items-center">
+        <svg class="w-10 h-10 text-orange-500 mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 7v-7"/></svg>
+        <span class="font-bold text-orange-700">Prácticas reales</span>
+        <span class="text-sm text-gray-600">Aprende haciendo, con talleres y simulaciones.</span>
+      </div>
+    </div>
+    <!-- Llamado a la acción -->
+    <div class="w-full mt-8 flex flex-col items-center">
+      <a href="../Formulario Iniciar Sesion/formlogin.html" class="px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold rounded-full shadow-lg hover:scale-105 hover:from-orange-600 hover:to-orange-500 transition-all duration-300 text-lg">¡Inscríbete ahora!</a>
+      <span class="mt-2 text-orange-700 font-semibold">¡Cupos limitados!</span>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Indicares-->
+<section class="w-full max-w-6xl mx-auto px-4 py-12">
+
+  <!-- Video -->
+  <section class="relative w-full flex items-center justify-center bg-gradient-to-br from-orange-100 via-orange-50 to-orange-200 py-8 md:py-16 overflow-hidden">
+    <div class="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+    <img src="../Imagenes/imagen05.jpeg"  class="w-full h-64 md:h-96 object-cover" poster="../Imagenes/imagenarticle.jpg"></i>
+      <div class="absolute inset-0 bg-gradient-to-t from-orange-900/70 via-orange-400/20 to-transparent flex flex-col justify-end p-6 md:p-10">
+        <h2 class="text-2xl md:text-4xl font-bold text-white mb-2 drop-shadow-lg">Vive la experiencia IEGV</h2>
+        <p class="text-base md:text-lg text-white mb-2 drop-shadow">Aprende de los mejores chefs, vive la cocina real y haz de tu pasión tu profesión.</p>
+      </div>
+    </div>
+  </section>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+      <span class="text-4xl font-extrabold text-orange-600">+1200</span>
+      <span class="text-orange-800 font-semibold mt-2">Egresados</span>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+      <span class="text-4xl font-extrabold text-orange-600">15</span>
+      <span class="text-orange-800 font-semibold mt-2">Años de experiencia</span>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+      <span class="text-4xl font-extrabold text-orange-600">8</span>
+      <span class="text-orange-800 font-semibold mt-2">Premios nacionales</span>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+      <span class="text-4xl font-extrabold text-orange-600">+20</span>
+      <span class="text-orange-800 font-semibold mt-2">Cursos y talleres</span>
+    </div>
+  </div>
+</section>
+
+<!-- preguntas con js-->
+<section class="w-full max-w-4xl mx-auto px-4 py-12">
+  <h2 class="text-2xl md:text-3xl font-bold text-orange-600 mb-8 text-center">Preguntas Frecuentes</h2>
+  <div id="faq" class="space-y-4">
+    <div class="bg-white rounded-xl shadow p-4">
+      <button class="w-full flex justify-between items-center text-left font-semibold text-orange-700 focus:outline-none faq-question">
+        <span>¿Cuáles son los requisitos de inscripción?</span>
+        <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="faq-answer hidden mt-2 text-gray-700">Debes consignar 2 fotos tipo carnet, fotocopia de la cédula, pago de inscripción y mensualidad.</div>
+    </div>
+    <div class="bg-white rounded-xl shadow p-4">
+      <button class="w-full flex justify-between items-center text-left font-semibold text-orange-700 focus:outline-none faq-question">
+        <span>¿Puedo inscribirme si no tengo experiencia previa?</span>
+        <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="faq-answer hidden mt-2 text-gray-700">Sí, todos nuestros programas están diseñados para principiantes y avanzados.</div>
+    </div>
+    <div class="bg-white rounded-xl shadow p-4">
+      <button class="w-full flex justify-between items-center text-left font-semibold text-orange-700 focus:outline-none faq-question">
+        <span>¿La certificación es válida a nivel nacional?</span>
+        <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="faq-answer hidden mt-2 text-gray-700">Sí, está avalada por el Ministerio de Educación y la UNET.</div>
+    </div>
+    <div class="bg-white rounded-xl shadow p-4">
+      <button class="w-full flex justify-between items-center text-left font-semibold text-orange-700 focus:outline-none faq-question">
+        <span>¿Dónde puedo ver el pensum completo?</span>
+        <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="faq-answer hidden mt-2 text-gray-700">Puedes solicitarlo por WhatsApp o Instagram, o visitando nuestra sede.</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    
+
+<!-- Formulario de contacto -->
+<section class="w-full max-w-md mx-auto px-4 py-12">
+  <div class="bg-white/90 rounded-3xl shadow-2xl p-8 flex flex-col items-center animate-fadeInUp">
+    <h2 class="text-2xl md:text-3xl font-bold text-orange-600 mb-4 text-center">¿Quieres recibir información?</h2>
+    <form class="w-full flex flex-col gap-4">
+      <label for="contacto-email" class="text-orange-700 font-semibold">Correo electrónico</label>
+      <input type="email" id="contacto-email" name="contacto-email" placeholder="ejemplo@email.com" required class="px-4 py-3 rounded-lg border-2 border-orange-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition text-lg" />
+      <button type="submit" class="mt-2 px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold rounded-full shadow-lg hover:scale-105 hover:from-orange-600 hover:to-orange-500 transition-all duration-300">Enviar</button>
+    </form>
+    <p class="mt-4 text-gray-600 text-sm text-center">Solo te contactaremos para enviarte información relevante sobre cursos y novedades.</p>
+  </div>
+</section>
+
+<!-- Footer  -->
+<footer class="w-full bg-gradient-to-r from-orange-900 via-orange-700 to-orange-500 text-white flex flex-col md:flex-row md:justify-between items-center px-6 py-8 mt-8 shadow-inner gap-6">
+  <div class="flex flex-col items-center md:items-start">
+    <img src="../Imagenes/icono.png" alt="IEGV Logo" class="w-16 h-16 mb-2 drop-shadow-lg" />
+    <span class="font-bold text-lg">IEGV</span>
+    <span class="text-sm">Instituto de Estudios Gastronómicos de Venezuela</span>
+    <span class="text-xs">RIF: J-29921279-2</span>
+    <span class="text-xs">© 2025 Todos los derechos reservados</span>
+  </div>
+  <div class="flex flex-col items-center">
+    <h3 class="text-xl font-bold mb-2 drop-shadow">Síguenos</h3>
+    <div class="flex gap-6 mb-2">
+      <a href="https://www.facebook.com/profile.php?id=100067784191332" target="_blank" class="hover:scale-110 transition-transform"><img src="../Imagenes/facebook.png" class="w-10 h-10 rounded-full shadow-lg border-2 border-white hover:border-orange-300" alt="Facebook"></a>
+      <a href="https://www.instagram.com/iegv_sc/" target="_blank" class="hover:scale-110 transition-transform"><img src="../Imagenes/social.png" class="w-10 h-10 rounded-full shadow-lg border-2 border-white hover:border-orange-300" alt="Instagram"></a>
+      <a href="https://api.whatsapp.com/send/?phone=584149753907" target="_blank" class="hover:scale-110 transition-transform"><img src="../Imagenes/whatsapp.png" class="w-10 h-10 rounded-full shadow-lg border-2 border-white hover:border-orange-300" alt="Whatsapp"></a>
+    </div>
+    <span class="text-xs">info@ievg.com.ve</span>
+  </div>
+  <div class="flex flex-col items-center md:items-end">
+    <h3 class="text-xl font-bold mb-2 drop-shadow">Ubicación</h3>
+    <p class="text-sm text-center md:text-right  transition">San Cristóbal, Táchira, Venezuela</p>
+  <iframe class="rounded-xl mt-2 shadow-lg border-2 border-orange-200" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62838.96407396444!2d-72.2732662!3d7.7713851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6645c7e2e2e2e3%3A0x7e6b7e6b7e6b7e6b!2sLa%20Guayana%2C%20San%20Crist%C3%B3bal%2C%20T%C3%A1chira%2C%20Venezuela!5e0!3m2!1ses-419!2sve!4v1693770000000!5m2!1ses-419!2sve" width="220" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación IEGV"></iframe>
+  </div>
+</footer>
+
+
+
+    <!--JavaScript-->
+  <script src="seccionform.js"></script>
+  <script src="faq.js"></script>
+
+
+</body>
+</html>
