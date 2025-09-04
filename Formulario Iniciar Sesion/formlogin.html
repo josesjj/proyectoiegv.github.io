@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="../Principal/menu.js"></script>
-    <link rel="icon" href="../Imagenes/icono.png">
+    <script defer src="/menu.js"></script>
+    <link rel="icon" href="/Imagenes/icono.png">
     <title>IEGV - Iniciar Sesión</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 
 <nav class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-orange-100 via-orange-200 to-orange-300 shadow-lg">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
-        <a href="../Principal/index.html" class="flex items-center">
+        <a href="../index.html" class="flex items-center">
             <img src="../Imagenes/icono.png" alt="Logo" class="h-14 w-14 drop-shadow-lg hover:scale-110 transition-transform duration-300" />
         </a>
         <!-- Botón hamburguesa -->
@@ -26,17 +26,33 @@
         <!-- Menú normal -->
 
         <ul id="menu-list" class="hidden md:flex space-x-4 md:space-x-8 font-semibold text-orange-900 text-lg">
-            <li><a href="../Principal/index.html" class="px-4 py-2 rounded-full hover:bg-orange-400 hover:text-white transition">Regresar</a></li>
-            <li><a href="../Formulario Register/formregister.html" class="px-4 py-2 rounded-full hover:bg-orange-400 hover:text-white transition">Registrarse</a></li>
-            <li><a href="#redes" class="px-4 py-2 rounded-full hover:bg-orange-400 hover:text-white transition">Redes sociales</a></li>
+            <li>
+                <a href="/index.html" class="flex items-center gap-2 px-5 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold shadow-md hover:from-orange-500 hover:to-orange-600 hover:scale-105 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+                    Regresar
+                </a>
+            </li>
+            <li>
+                <a href="/Formulario Register/formregister.html" class="flex items-center gap-2 px-5 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold shadow-md hover:from-orange-500 hover:to-orange-600 hover:scale-105 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+                    Registrarse
+                </a>
+            </li>
+         
         </ul>
     </div>
     <!-- Menú móvil -->
 
     <ul id="menu-mobile" class="md:hidden fixed top-16 left-0 w-full bg-orange-100 shadow-lg flex-col items-center text-orange-900 text-lg font-semibold space-y-2 py-6 z-40 hidden animate-fadeInUp">
-        <li><a href="../Principal/index.html" class="block px-6 py-3 rounded-full hover:bg-orange-400 hover:text-white transition">Regresar</a></li>
-        <li><a href="../Formulario Register/formregister.html" class="block px-6 py-3 rounded-full hover:bg-orange-400 hover:text-white transition">Registrarse</a></li>
-        <li><a href="#redes" class="block px-6 py-3 rounded-full hover:bg-orange-400 hover:text-white transition">Redes sociales</a></li>
+    <li>
+        <a href="/index.html" class="block w-full text-center px-6 py-3 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold shadow-md hover:from-orange-500 hover:to-orange-600 hover:scale-105 transition-all duration-300">Regresar</a>
+    </li>
+    <li>
+        <a href="/Formulario Register/formregister.html" class="block w-full text-center px-6 py-3 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold shadow-md hover:from-orange-500 hover:to-orange-600 hover:scale-105 transition-all duration-300">Registrarse</a>
+    </li>
+    <li>
+        <a href="#footer" class="block w-full text-center px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold shadow-md hover:from-orange-600 hover:to-orange-500 hover:scale-105 transition-all duration-300">Redes sociales</a>
+    </li>
     </ul>
 </nav>
 
@@ -60,6 +76,7 @@
         <div class="mt-6 text-center">
             <p class="text-gray-700">¿No tienes una cuenta?</p>
             <a href="../Formulario Register/formregister.html" class="text-orange-600 font-bold underline hover:text-orange-800 transition">Regístrate aquí</a>
+<!-- ...existing code... -->
         </div>
     </div>
 </main>
@@ -71,7 +88,7 @@
 
 <footer class="w-full bg-gradient-to-r from-orange-900 via-orange-700 to-orange-500 text-white flex flex-col md:flex-row md:justify-between items-center px-6 py-8 mt-8 shadow-inner gap-6">
     <div class="flex flex-col items-center md:items-start">
-        <img src="../Imagenes/icono.png" alt="IEGV Logo" class="w-16 h-16 mb-2 drop-shadow-lg" />
+    <img src="../Imagenes/icono.png" alt="IEGV Logo" class="w-16 h-16 mb-2 drop-shadow-lg" />
         <span class="font-bold text-lg">IEGV</span>
         <span class="text-sm">Instituto de Estudios Gastronómicos de Venezuela</span>
         <span class="text-xs">RIF: J-29921279-2</span>

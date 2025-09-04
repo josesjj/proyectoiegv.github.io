@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="../Principal/menu.js"></script>
-    <link rel="icon" href="../Imagenes/icono.png">
+    <script defer src="/menu.js"></script>
+    <link rel="icon" href="/Imagenes/icono.png">
     <title>IEGV - Registro</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 
 <nav class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-orange-100 via-orange-200 to-orange-300 shadow-lg">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
-        <a href="../Principal/index.html" class="flex items-center">
+        <a href="../index.html" class="flex items-center">
             <img src="../Imagenes/icono.png" alt="Logo" class="h-14 w-14 drop-shadow-lg hover:scale-110 transition-transform duration-300" />
         </a>
         <!-- Botón hamburguesa -->
@@ -24,16 +24,32 @@
         </button>
         <!-- Menú normal -->
         <ul id="menu-list" class="hidden md:flex space-x-4 md:space-x-8 font-semibold text-orange-900 text-lg">
-            <li><a href="../Principal/index.html" class="px-4 py-2 rounded-full hover:bg-orange-400 hover:text-white transition">Regresar</a></li>
-            <li><a href="../Formulario Iniciar Sesion/formlogin.html" class="px-4 py-2 rounded-full hover:bg-orange-400 hover:text-white transition">Iniciar sesión</a></li>
-            <li><a href="#redes" class="px-4 py-2 rounded-full hover:bg-orange-400 hover:text-white transition">Redes sociales</a></li>
+            <li>
+                <a href="/index.html" class="flex items-center gap-2 px-5 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold shadow-md hover:from-orange-500 hover:to-orange-600 hover:scale-105 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+                    Regresar
+                </a>
+            </li>
+            <li>
+                <a href="/Formulario Iniciar Sesion/formlogin.html" class="flex items-center gap-2 px-5 py-2 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold shadow-md hover:from-orange-500 hover:to-orange-600 hover:scale-105 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+                    Iniciar sesión
+                </a>
+            </li>
+           
         </ul>
     </div>
     <!-- Menú móvil -->
     <ul id="menu-mobile" class="md:hidden fixed top-16 left-0 w-full bg-orange-100 shadow-lg flex-col items-center text-orange-900 text-lg font-semibold space-y-2 py-6 z-40 hidden animate-fadeInUp">
-        <li><a href="../Principal/index.html" class="block px-6 py-3 rounded-full hover:bg-orange-400 hover:text-white transition">Regresar</a></li>
-        <li><a href="../Formulario Iniciar Sesion/formlogin.html" class="block px-6 py-3 rounded-full hover:bg-orange-400 hover:text-white transition">Iniciar sesión</a></li>
-        <li><a href="#redes" class="block px-6 py-3 rounded-full hover:bg-orange-400 hover:text-white transition">Redes sociales</a></li>
+    <li>
+        <a href="/index.html" class="block w-full text-center px-6 py-3 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold shadow-md hover:from-orange-500 hover:to-orange-600 hover:scale-105 transition-all duration-300">Regresar</a>
+    </li>
+    <li>
+        <a href="/Formulario Iniciar Sesion/formlogin.html" class="block w-full text-center px-6 py-3 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold shadow-md hover:from-orange-500 hover:to-orange-600 hover:scale-105 transition-all duration-300">Iniciar sesión</a>
+    </li>
+    <li>
+        <a href="#footer" class="block w-full text-center px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold shadow-md hover:from-orange-600 hover:to-orange-500 hover:scale-105 transition-all duration-300">Redes sociales</a>
+    </li>
     </ul>
 </nav>
 
@@ -60,6 +76,7 @@
         <div class="mt-6 text-center">
             <p class="text-gray-700">¿Ya tienes una cuenta?</p>
             <a href="../Formulario Iniciar Sesion/formlogin.html" class="text-orange-600 font-bold underline hover:text-orange-800 transition">Inicia sesión</a>
+<!-- ...existing code... -->
         </div>
     </div>
 </main>
@@ -69,6 +86,10 @@
 <!--Footer Section-->
 
 
+<!-- Botón Regresar para cerrar sesión -->
+<div class="w-full flex justify-center my-8">
+    <button id="regresar" class="px-8 py-3 bg-gradient-to-r from-orange-400 to-orange-600 text-white font-bold rounded-full shadow-lg hover:scale-105 hover:from-orange-600 hover:to-orange-500 transition-all duration-300 text-lg">Regresar</button>
+</div>
 <footer class="w-full bg-gradient-to-r from-orange-900 via-orange-700 to-orange-500 text-white flex flex-col md:flex-row md:justify-between items-center px-6 py-8 mt-8 shadow-inner gap-6">
     <div class="flex flex-col items-center md:items-start">
         <img src="../Imagenes/icono.png" alt="IEGV Logo" class="w-16 h-16 mb-2 drop-shadow-lg" />
@@ -88,6 +109,7 @@
     </div>
     <div class="flex flex-col items-center md:items-end">
         <h3 class="text-xl font-bold mb-2 drop-shadow">Ubicación</h3>
+        <p class="text-sm text-center md:text-right  transition">San Cristóbal, Táchira, Venezuela</p>
         <iframe class="rounded-xl mt-2 shadow-lg border-2 border-orange-200" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62838.96407396444!2d-72.2732662!3d7.7713851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6645c7e2e2e2e3%3A0x7e6b7e6b7e6b7e6b!2sLa%20Guayana%2C%20San%20Crist%C3%B3bal%2C%20T%C3%A1chira%2C%20Venezuela!5e0!3m2!1ses-419!2sve!4v1693770000000!5m2!1ses-419!2sve" width="220" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación IEGV"></iframe>
     </div>
 </footer>
