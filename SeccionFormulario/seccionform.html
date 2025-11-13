@@ -84,7 +84,8 @@
       <li>Pasantías</li>
     </ol>
     <h4 class="text-md font-bold text-orange-600 mt-2 mb-1">Breve reseña</h4>
-    <p class="text-gray-700 text-sm text-center">La carrera de Chef en Cocina Internacional dura 24 meses, con formación teórica y práctica, pasantías y simulación de restaurante. Avalada por la UNET y el Ministerio de Educación.</p>
+    <p class="text-gray-700 text-sm text-center mb-4">La carrera de Chef en Cocina Internacional dura 24 meses, con formación teórica y práctica, pasantías y simulación de restaurante. Avalada por la UNET y el Ministerio de Educación.</p>
+    <button class="quick-enroll-btn w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold rounded-full shadow-lg hover:scale-105 hover:from-orange-600 hover:to-orange-500 transition-all duration-300" data-course="cocina-internacional">Inscripción Rápida</button>
   </div>
   <!-- Chef en Panadería, Pastelería y Repostería -->
   <div class="bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center border-t-8 border-orange-500 hover:scale-105 transition-transform duration-300 animate-fadeInUp">
@@ -107,7 +108,8 @@
       <li>Pasantías</li>
     </ol>
     <h4 class="text-md font-bold text-orange-600 mt-2 mb-1">Breve reseña</h4>
-    <p class="text-gray-700 text-sm text-center">Duración: 21 meses. Formación integral en panificación y repostería, con prácticas reales y simulación de restaurante/pastelería. Certificación oficial.</p>
+    <p class="text-gray-700 text-sm text-center mb-4">Duración: 21 meses. Formación integral en panificación y repostería, con prácticas reales y simulación de restaurante/pastelería. Certificación oficial.</p>
+    <button class="quick-enroll-btn w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold rounded-full shadow-lg hover:scale-105 hover:from-orange-600 hover:to-orange-500 transition-all duration-300" data-course="panaderia-pasteleria">Inscripción Rápida</button>
   </div>
 </main>
 
@@ -206,6 +208,52 @@
   </div>
 </section>
 
+<!-- Quick Enrollment Popup Modal -->
+<div id="quick-enroll-popup" class="hidden fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4">
+  <div class="bg-white w-full max-w-6xl max-h-[90vh] rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row relative">
+    <!-- Close Button -->
+    <button id="close-popup" class="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white rounded-full shadow-lg transition-all duration-300">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+    
+    <!-- Left Column: Course Details -->
+    <div class="flex-1 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
+      <div id="popup-content">
+        <!-- Content will be dynamically inserted here -->
+      </div>
+    </div>
+    
+    <!-- Right Column: Enrollment Form -->
+    <div class="w-full md:w-96 bg-orange-50 p-6 md:p-8 flex flex-col overflow-y-auto max-h-[90vh]">
+      <h3 class="text-2xl font-bold text-orange-600 mb-4">Solicitar Información</h3>
+      <form id="quick-enroll-form" class="flex flex-col gap-4">
+        <div class="flex flex-col gap-1">
+          <label for="enroll-name" class="text-orange-700 font-semibold text-sm">Nombre Completo</label>
+          <input type="text" id="enroll-name" name="name" placeholder="Tu nombre" required class="px-4 py-2 rounded-lg border-2 border-orange-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition" />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="enroll-email" class="text-orange-700 font-semibold text-sm">Correo Electrónico</label>
+          <input type="email" id="enroll-email" name="email" placeholder="ejemplo@email.com" required class="px-4 py-2 rounded-lg border-2 border-orange-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition" />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="enroll-phone" class="text-orange-700 font-semibold text-sm">Teléfono</label>
+          <input type="tel" id="enroll-phone" name="phone" placeholder="+58 414 123 4567" required class="px-4 py-2 rounded-lg border-2 border-orange-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition" />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="enroll-message" class="text-orange-700 font-semibold text-sm">Mensaje (opcional)</label>
+          <textarea id="enroll-message" name="message" placeholder="¿Tienes alguna pregunta?" rows="3" class="px-4 py-2 rounded-lg border-2 border-orange-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition resize-none"></textarea>
+        </div>
+        <button type="submit" class="mt-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold rounded-full shadow-lg hover:scale-105 hover:from-orange-600 hover:to-orange-500 transition-all duration-300">Enviar Solicitud</button>
+      </form>
+      <div class="mt-6 pt-6 border-t-2 border-orange-200">
+        <p class="text-xs text-gray-600 text-center">Al enviar esta solicitud, nos pondremos en contacto contigo para brindarte más información sobre el curso.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Footer  -->
 <footer class="w-full bg-gradient-to-r from-orange-900 via-orange-700 to-orange-500 text-white flex flex-col md:flex-row md:justify-between items-center px-6 py-8 mt-8 shadow-inner gap-6">
   <div class="flex flex-col items-center md:items-start">
@@ -236,6 +284,7 @@
     <!--JavaScript-->
 
   <script src="seccionform.js"></script>
+  <script src="quick-enroll-popup.js"></script>
   <script src="/faq.js"></script>
   <script src="/animacion-inicio.js"></script>
 
